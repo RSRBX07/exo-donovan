@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Games</h1>
+<hr>
+
+<table>
+  <h3>Tirages loto</h3>
+  <ul>
+  <% @games.each do |game| %>
+    <li>
+      <!--<%= game.name %>-->
+      <%= link_to(game.name, new_game_path)%>
+    </li>
+  <% end %>
+  </ul>
+</table>
+
