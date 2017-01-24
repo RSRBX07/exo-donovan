@@ -1,19 +1,57 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Games</h1>
+<div class="container">
+  <h1>Games</h1>
+</div>
+
 <hr>
 
-<table>
-<div class="container">
+<!--Lotos-->
+<div class="Loto">
+  <div class="container">
   <h3>Tirages loto</h3>
-  <ul>
-  <% @games.each do |game| %>
-    <li>
-      <!--<%= game.name %>-->
-      <%= link_to(game.name, new_game_path)%>
-    </li>
-  <% end %>
-  </ul>
+    <div class="raw">
+      <div class="col-sm-4">
+        <h4>Semaine 1 </h4>
+        <ul>
+          <% @games.each do |game| %>
+            <li>
+              <%= link_to(game.name, new_game_path)%>
+            </li>
+          <% end %>
+          </ul>
+      </div>
+      <div class="col-sm-4">
+        <h4>Semaine 2 </h4>
+        <ul>
+        <% @games.each do |game| %>
+          <li>
+            <%= link_to(game.name, new_game_path)%>
+          </li>
+        <% end %>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <h4>Semaine 3 </h4>
+        <ul>
+          <% @games.each do |game| %>
+            <li>
+              <%= link_to(game.name, new_game_path)%>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--Date-->
+  <div class="row">
+    <div class="col-sm-10"></div>
+    <div class="col-sm-2">
+      <%= DateTime.now.strftime("%F") %>
+    </div>
+  </div>
 </div>
-</table>
+
+<hr>
 
