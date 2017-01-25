@@ -1,16 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @game.name %>
-</p>
+<div class="container">
+  <p>
+    <strong>Name:</strong>
+    <%= @game.name %>
+  </p>
 
-<p>There is currently <%= @game.players %> players on this party<p>
+  <p>There is currently <%= @game.players %> players on this party<p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @game.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @game.description %>
+  </p>
 
-<%= link_to 'Edit', edit_game_path(@game) %> |
-<%= link_to 'Back', games_path %>
+  <p>
+    <%= @game.draw %>
+  </p>
+
+  <%= link_to 'Editer', edit_game_path(@game) %> |
+  <%= link_to 'Retour', games_path %>
+</div>

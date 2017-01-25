@@ -8,9 +8,9 @@
 
 Game.destroy_all
 Game.create([
-  {name: "Loto du lundi", description: "Triage de Loto", players: 6155},
-  {name: "Loto du mardi", description: "Triage de Loto", players: 6155},
-  {name: "Loto du mercredi", description: "Triage de Loto", players: 6155},
-  {name: "Loto du jeudi", description: "Triage de Loto", players: 6155},
-  {name: "Loto du vendredi", description: "Triage de Loto", players: 6155}
+  {name: "Loto du lundi", description: "Triage de Loto", players: 6155, draw: '1,2,3,4,5'},
+  {name: "Loto du mardi", description: "Non, Tirage je veux dire", players: 48313, draw: '1,2,3,4,5'},
+  {name: "Loto du mercredi", description: "Enfin... Je ne sais plus...", players: 68495, draw: '1,2,3,4,5'},
+  {name: "Loto du jeudi", description: "Hum...", players: 91433, draw: '1,2,3,4,5'},
+  {name: "Loto du vendredi", description: "Rhaaa! Balek'!", players: 666, draw: '1,2,3,4,5'}
 ])

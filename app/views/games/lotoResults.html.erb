@@ -1,0 +1,24 @@
+<style>
+  .title {
+    position: center;
+  }
+</style>
+
+<%= require("./Exos_Loto/lib/loto/loto.rb")%>
+<%= tirage = Loto.new %>
+<%= @grid = Loto.get_flash %>
+
+
+
+<div class="Title">
+  <h1>Tirage loto</h1>
+  <hr>
+</div>
+
+<div class="container">
+  <h2><%= @grid %><h2>
+  <br>
+
+</div>
+
+<%= link_to 'Retour', games_path%>
